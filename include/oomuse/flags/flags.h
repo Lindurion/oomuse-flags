@@ -43,7 +43,8 @@
  *
  * int main(int argc, char* argv[]) {
  *   // Initialize and validate all command-line flags. If any required flags
- *   // are missing or any
+ *   // are missing or any validators fail, this will print out program usage
+ *   // and exit.
  *   flags::initOrPrintUsageAndDie(
  *       &argc, argv, "your_program_name", "positional_arg1 positional_arg2",
  *       "Special notes on usage go here.");
