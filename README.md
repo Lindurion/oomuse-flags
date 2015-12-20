@@ -20,7 +20,7 @@ namspace flags = oomuse::flags;
 
 Flag<int32> retryLimit("retry_limit", "Max # of times to retry",
                        Validators<int32>::greaterOrEqual(1));
-Flag<string> username("username", "Username between 3 and 15 characters",,
+Flag<string> username("username", "Username between 3 and 15 characters",
                       FlagRequired::YES,
                       Validators<string>::sizeGreaterOrEqual(3),
                       Validators<string>::sizeLessOrEqual(15));
