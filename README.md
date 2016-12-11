@@ -13,6 +13,10 @@ $ your_program_name --verbose --username=slyfox31 --retry_limit=3
 
 From your code:
 ```C++
+#include "oomuse/core/Validators.h"
+#include "oomuse/flags/Flag.h"
+#include "oomuse/flags/flags.h"
+
 using oomuse::Flag;
 using oomuse::FlagRequired;
 using oomuse::Validators;
