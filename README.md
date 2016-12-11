@@ -63,40 +63,9 @@ int main(int argc, char* argv[]) {
 ```
 
 
-## Build and Install Instructions
+## Using oomuse-flags in your own projects
 
-- Start by following the instructions to [build and install oomuse-core](https://github.com/Lindurion/oomuse-core/blob/master/README.md#prerequisites).
-- Follow the same pattern to build this library:
-  - Clone this git repo somewhere (e.g. `C:\github\oomuse-flags` or `~/github/oomuse-flags`).
-  - Create a separate directory to use for building (e.g. `C:\cmakebuild\oomuse-flags` or `~/cmakebuild/oomuse-flags`).
-  - Run `cmake-gui .` to customize build variables:
-
-Variable             | Type     | Sample Value
----------------------|----------|-----------------------------------------------------------
-`CMAKE_BUILD_TYPE`   | STRING   | `Debug` or `Release`
-`OOMUSE_ROOT`        | FILEPATH | `C:/cmakeinstall` <br> or `/Users/<your-username>/cmakeinstall`
-`OOMUSE_CRT_LINKAGE` | STRING   | `dynamic` or `static`
-`GTEST_ROOT`         | FILEPATH | `C:/cmakeinstall/googletest` <br> or `/Users/<your-username>/cmakeinstall/googletest`
-
-Finally, you can build:
-```
-$ nmake  # Windows.
-$ make   # Mac or Linux.
-```
-
-Run tests:
-```
-$ nmake test           # Windows.
-$ oomuse-flags_test    # Windows.
-$ make test            # Mac or Linux.
-$ ./oomuse-flags_test  # Mac or Linux.
-```
-
-And install:
-```
-$ nmake install  # Windows.
-$ make install   # Mac or Linux.
-```
+See [oomuse-core README](https://github.com/Lindurion/oomuse-core) for build & test instructions. In addition to those, just add a [conan](http://docs.conan.io/en/latest/) requirement on `oomuse-flags/0.1.0@lindurion/stable`.
 
 
 ## Custom Flag Types
